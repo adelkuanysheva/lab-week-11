@@ -10,10 +10,11 @@ const todoList = [
 
 let completedTodos = []
 
+
 // Part 5
 
 for (const obj of todoList) {
-    if (obj["status"] === "complete") {
+    if (obj.status === "complete") {
         completedTodos.push(obj)
     }
 }
@@ -21,3 +22,7 @@ for (const obj of todoList) {
 
 // Part 6
 
+for (const obj of completedTodos) {
+    let todo = obj.todo
+    console.log(todo) 
+}
