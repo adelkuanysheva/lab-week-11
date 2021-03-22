@@ -1,4 +1,4 @@
-// your JavaScript goes here, you can delete this comment
+// Part 4
 
 const todoList = [ 
 
@@ -9,4 +9,15 @@ const todoList = [
 ]
 
 let completedTodos = []
+
+// Part 5
+
+for (const obj of todoList) {
+    if (obj["status"] === "complete") {
+        completedTodos.push(obj)
+    }
+}
+
+
+// Part 6
 
